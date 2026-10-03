@@ -6,3 +6,8 @@ __pycache__/
 *.sqlite3
 dist/
 build/
+
+# 事件库本地文件
+*.db
+*.db-wal
+*.db-shm
