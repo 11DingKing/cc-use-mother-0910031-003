@@ -1,6 +1,16 @@
 [project]
-name = "domain-contract-0910031-003"
-version = "0.1.0"
-description = "志愿服务积分结算的领域约定与校验工具"
+name = "points-ledger-0910031-003"
+version = "1.0.0"
+description = "志愿服务积分结算服务端：重复报送核对、年度封账更正、余额守恒与审计复算"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+points-ledger = "points_ledger.api:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
